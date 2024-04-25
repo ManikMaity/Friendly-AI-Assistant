@@ -5,7 +5,7 @@ let model;
 
 function getAPIKey() {
   apiKey = localStorage.getItem("apiKey");
-  if (apiKey == null){
+  if (apiKey == null || apiKey == ""){
     apiKey = prompt("Enter Gemini API key");
     localStorage.setItem("apiKey", apiKey);
   }
