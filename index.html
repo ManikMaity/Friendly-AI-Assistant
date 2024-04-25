@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="chat-app-container">
+
+        <!-- header starts here  -->
+        <div class="header">
+          <div class="img-container">
+            <img src="./assets/ai-background.webp" alt="ai">
+          </div>
+          
+          <div class="ai-info">
+            <h1>Your AI Assistent</h1>
+            <p>Online</p>
+          </div>
+        </div>
+        <!-- header ends here  -->
+
+        <!-- main chats/history section starts here  -->
+        <div class="chats-container msger-chat">
+
+
+
+          <div class="msg left-msg ai-msg-1">
+            <div
+             class="msg-img"
+             style="background-image: url(./assets/ai-background.webp)"
+            ></div>
+      
+            <div class="msg-bubble">
+              <div class="msg-info">
+                <div class="msg-info-name">BOT</div>
+                <div class="msg-info-time">12:45</div>
+              </div>
+      
+              <div class="loader"></div>
+              <div class="msg-text">
+                Hi, welcome to SimpleChat! Go ahead and send me a message. 😄
+              </div>
+            </div>
+          </div>
+
+          <div class="msg right-msg">
+            <div
+             class="msg-img"
+             style="background-image: url(./assets/user.png)"
+            ></div>
+      
+            <div class="msg-bubble">
+              <div class="msg-info">
+                <div class="msg-info-name">User</div>
+                <div class="msg-info-time">12:46</div>
+              </div>
+      
+              <div class="msg-text">
+                You can change your name in JS section!
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <!-- main chats/history section ends here  -->
+
+        <!-- sent chat area starts here  -->
+        <div class="errorMsg-container"> <i class="fa-solid fa-circle-exclamation"></i> <p class="errorMsg">Error goes here</p> </div>
+        <form class="msger-inputarea">
+          <input type="text" class="msger-input" placeholder="Enter your message...">
+          <button type="submit" class="msger-send-btn">Send<i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+        
+        <!-- sent chat area ends here  -->
+
+
+
+      </div>
+
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
