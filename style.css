@@ -124,6 +124,8 @@ body{
   padding: 15px;
   border-radius: 15px;
   background: var(--left-msg-bg);
+  white-space: normal;
+  word-wrap: break-word;
 }
 .msg-info {
   display: flex;
@@ -144,6 +146,8 @@ body{
   background-color: #ffffff6b;
 
 }
+
+
 
 .right-msg {
   flex-direction: row-reverse;
@@ -191,6 +195,7 @@ body{
 
 /* HTML: <div class="loader"></div> */
 .loader {
+  display: none;
   width: 60px;
   aspect-ratio: 2;
   --_g: no-repeat radial-gradient(circle closest-side,#ffffff 90%,#ffffff00);
@@ -209,10 +214,6 @@ body{
 }
 
 
-.ai-msg-1 .loader{
-  display: none;
-}
-
 .errorMsg-container{
   font-family: monospace;
   display: none;
@@ -225,4 +226,9 @@ body{
 
 .show{
   display: flex;
+}
+
+
+.hide{
+  display: none;
 }
