@@ -29,12 +29,7 @@ body{
   overflow: hidden;
 }
 
-@media screen and (max-width: 600px) {
-  .chat-app-container{
-    height: 100%;
-    width: 100%;
-  }
-}
+
 
 .header{
   height: 80px;
@@ -231,4 +226,12 @@ body{
 
 .hide{
   display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .chat-app-container{
+    height: 100%;
+    width: 100%;
+    border-radius: 0px;
+  }
 }
