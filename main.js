@@ -89,7 +89,6 @@ function makeUserMessageHTML(msg) {
   return `<div class="msg right-msg user-${makeMsgID()}">
   <div
    class="msg-img"
-   style="background-image: url(./assets/user.png)"
   ></div>
 
   <div class="msg-bubble">
@@ -110,12 +109,11 @@ function makeAIMessageHTML(id){
   return `<div class="msg left-msg ai-${id}">
   <div
    class="msg-img"
-   style="background-image: url(./assets/ai-background.webp)"
   ></div>
 
   <div class="msg-bubble">
     <div class="msg-info">
-      <div class="msg-info-name">BOT</div>
+      <div class="msg-info-name">Assistant</div>
       <div class="msg-info-time">${getTime()}</div>
     </div>
 

@@ -114,6 +114,16 @@ body{
   background-size: cover;
   border-radius: 50%;
 }
+.left-msg .msg-img{
+  background-image: url(./assets/ai-background.webp);
+}
+
+.right-msg .msg-img{
+  background-image: url(./assets/user.png);
+}
+
+
+
 .msg-bubble {
   max-width: 450px;
   padding: 15px;
@@ -230,8 +240,17 @@ body{
 
 @media screen and (max-width: 600px) {
   .chat-app-container{
-    height: 100%;
+    height: 100vh;
     width: 100%;
     border-radius: 0px;
+  }
+  .msg-bubble{
+    max-width: 82%;
+  }
+  .msger-inputarea * {
+    padding: 5px;
+  }
+  .chats-container{
+    height: 80%;
   }
 }
